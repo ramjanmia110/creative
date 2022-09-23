@@ -1,0 +1,543 @@
+/* reset code and common code here */
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: o;
+    font-weight: 400px;
+    list-style: none;
+}
+
+/* reset code and common code here */
+html{
+    background-color: #fff;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    font-family: 'Roboto';
+}
+
+body{
+    background-color: rgb(253, 246, 246);
+    width: 120rem;
+    max-width: 100%;
+    margin: auto;
+    box-shadow:0.1rem 0.1rem 0.1rem 0.1rem rgb(226, 185, 185);
+    text-align: center;
+}
+.text-white{
+    color:white;
+}
+
+.section-heading{
+    font-size: 8rem;
+    text-align: center;
+    font-family:'Italianno', cursive; ;
+}
+
+.section-center{
+    padding:5rem 1rem;
+    min-height:95vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.btn{
+    background-color: rgb(4, 43, 30);
+    color: white;
+    border: none;
+    border-radius: 0.8rem;
+    cursor: pointer;
+    box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem chocolate;
+    font-size: 1.6rem;
+    padding: 1rem;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    
+}
+
+/* header start here */
+
+.my-logo{
+    width: 10rem;
+    border:1px solid green;
+    border-radius: 50%;
+   
+    
+}
+
+.creative:hover{
+    color:rgb(207, 18, 207);
+   
+}
+#menu-icon{
+    display: none;
+}
+
+header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: aquamarine;
+    color:blue;
+    padding: 2rem 1rem;
+    position: sticky;
+    top:0;
+    z-index: 10;
+    min-height: 5vh;
+    
+  
+  
+}
+
+nav li{
+    display: inline-block;
+    margin-right: 2rem;
+    font-size: 2rem;
+    padding: 1rem;
+    text-transform: uppercase;
+    transition: all 0.4s;
+}
+
+nav li:hover{
+    background-color: bisque;
+    border-radius: 0.8rem;
+    
+}
+.nav-link{
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+nav li :last-child{
+    margin-right: 0;
+}
+/* header end here */
+
+/* banner section start here */
+#blog-banner-section{
+    padding:5rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+    background-color: rgb(243, 114, 92);
+}
+
+#blog-banner-section article{
+    flex-basis:50%;
+    margin: 1rem;
+}
+
+#blog-banner-section aside{
+    flex-basis: 50%;
+    text-align: center;
+}
+
+.banner-heading{
+    display: inline-block;
+    padding: 1rem;
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    background-color: rgb(83, 156, 216);
+    color:white;
+    box-shadow: 0.3rem 0.3rem 0.3rem white,-0.3rem 0.2rem ;
+}
+
+.banner-description{
+    font-size: 1.8rem;
+    text-align: justify;
+}
+
+.banner-img{
+    width: 50rem;
+    height: 50rem;
+    box-shadow: 0.3rem 0.3rem 0.3rem 0.3rem rgb(235, 59, 28),-0.3rem -0.3rem 0 -0.3rem rgb(235, 59, 28);
+   
+   
+}
+/* banner section end here */
+
+/* blog about start here */
+
+#blog-about{
+    min-height: 95vh;
+    padding: 5rem 1rem;
+    background-color: rgb(30, 28, 31);
+  
+}
+
+.card-container{
+    display: flex;
+    align-items: center;
+}
+
+.card{
+    display: 1;
+    border-radius: 0.6rem;
+    background-color: rgb(78, 78, 100);
+    padding: 3rem 1rem;
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s;
+    
+}
+
+.card:hover{
+    transform: scale(1.1);
+}
+
+.card-header{
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    color:white;
+}
+
+.card-description{
+    padding: 2rem 0;
+    text-align: justify;
+    font-size: 1.6rem;
+    margin-bottom: 5rem;
+    color:rgb(155, 206, 182)
+}
+
+.card-btn{
+    align-self: center;
+    width: 80%;
+}
+/* blog about end here */
+
+/* archives start here */
+#archives{
+    padding:5rem 1rem;
+    min-height: 95vh;
+    background-color:rgb(137, 104, 153) ;
+    
+}
+
+.archives-img{
+    width: 100%;
+    height: 100%;
+    border-radius: 0.6rem;
+    transition:transform 0.4s;
+    
+}
+
+.archives-img:hover{
+    transform: scale(1.1);
+}
+
+.archieves-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2rem;
+    border-top: 0.1rem solid;
+    border-bottom: 0.1rem solid;
+  
+}
+
+.archives-container-lists{
+    display: flex;
+    text-align: center;
+}
+
+.archives-container-list{
+    margin: 2rem;
+}
+/* archives end here */
+
+/* blog posts start here */
+#blog-posts{
+    background-color: rgb(151, 177, 233);
+}
+.blog-posts-heading{
+    margin-bottom:5rem;
+}
+
+.blog-post{
+    width: 70%;
+    display: flex;
+    margin:1rem 0;
+    box-shadow: 0.1rem 0.1rem 0.1rem  #222, -0.1rem 0 0.1rem #222;
+    transition:transform 0.4s;
+}
+
+.blog-post:hover{
+    transform:scale(1.1);
+}
+
+.blog-img{
+    width: 100%;
+    height: 100%;
+}
+
+.blog-post-aside{
+    flex:1;
+}
+
+.blog-content{
+    flex:2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 1rem;
+    margin-left: 2rem;
+}
+.blog-heading{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+
+}
+
+.blog-sub-heading{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.blog-description{
+    font-size: 1.3rem;
+    text-align: justify;
+    margin-bottom: 1rem;
+}
+
+.blog-btn{
+    width: 30%;
+}
+/* blog posts end here */
+
+/* contact section start here */
+#contact-section{
+    background-color: grey;
+}
+
+#contact-form{
+    padding:1rem;
+    box-shadow: 1rem 1rem 1rem rgb(78, 72, 72), -1rem 0 1rem;
+    margin:1rem;
+    background-color: rgb(180, 180, 137);
+    color:rgb(85, 76, 64);
+    display: flex;
+    flex-direction:column;
+
+}
+
+.form-control{
+    margin-bottom: 1.5rem;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+
+}
+
+.form-control label{
+    font-size: 1.6rem;
+    flex:0.3;
+}
+
+input,textarea{
+    flex:0.7rem;
+    width: 40rem;
+    font-size: 1.6rem;
+    padding:2rem 1rem;
+    border:none;
+    border-radius: 0.6rem;
+    
+}
+
+textarea{
+    resize: none;
+    height: 12vh;
+    
+}
+.form-btn-field{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.contact-btn{
+    width: 30%;
+}
+/* contact section end here */
+
+/* footer start here */
+
+footer{
+    background-color:black;
+    padding:1rem;
+    color:#fff;
+    min-height: 5vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.copyright-text{
+    font-size: 1.5rem;
+    color:bisque;
+
+}
+
+.footer-icon{
+    font-size: 2.5rem;
+    color:#fff;
+    
+   
+   
+}
+
+
+
+
+/* footer end here */
+
+
+/* respossive start here */
+
+@media(max-width:992px){
+    #blog-banner-section{
+        flex-direction: column;
+    }
+    #blog-banner-section article{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 5rem;
+    }
+
+    .card-container{
+        width:50%;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+}
+
+
+@media(max-width:768px){
+    html{
+        font-size: 55.5%;
+    }
+    #blog-banner-section article{
+        width: 80%;
+    }
+
+    .card-container{
+        width: 80%;
+    }
+
+    #archives{
+        min-height: auto;
+    }
+
+    .blog-post{
+        flex-direction: column;
+        width: 80%;
+    }
+
+   #contact-section{
+    min-height: auto;
+   }
+
+}
+
+@media(max-width:600px){
+
+    header{
+        flex-direction: column;
+    }
+
+    #menu-icon{
+        display: block;
+        margin-top: 1.5rem;
+        cursor: pointer;
+        color:blueviolet;
+        
+    }
+
+    .hidden{
+        display: none;
+    }
+
+    nav ul{
+        padding-left: 2.5rem;
+    }
+
+    nav li{
+        display: block;
+        margin-right: 0;
+        margin: 1rem 0;
+        text-align: justify;
+        margin-left: 4rem;
+    }
+    
+
+    html{
+        font-size: 48.5%;
+    }
+
+    #blog-banner-section{
+        min-height: auto;
+    }
+    #blog-banner-section article{
+        width: 90%;
+    }
+
+    .card-container{
+        width: 90%;
+    }
+    .banner-img{
+        max-width: 100%;
+    }
+
+    #blog-about{
+        min-height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    .archives-container-lists{
+        flex-wrap: wrap;
+    }
+
+    .blog-post{
+        width: 90%;
+    }
+    #contact-form{
+        width: 90%;
+    }
+
+    .form-control{
+        flex-direction: column;
+    }
+
+    input,textarea{
+        max-width: 100%;
+        
+    }
+    
+
+    .form-control label{
+        margin-bottom: 0.5rem;
+    }
+
+    footer{
+        flex-direction: column;
+    }
+
+    #menubar2{
+        display: flex;
+    }
+
+    #contact-section{
+        min-height: 95vh;
+    }
+}
